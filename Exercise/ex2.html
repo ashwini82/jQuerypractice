@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Greeting</title>
+</head>
+<body style="background-color:powderblue">
+   <p id="greet" style="font-size:30px"> For Greetings Click Button</p>
+   
+   <button onclick = "myFunction()">Enter Here</button>
+
+<!--<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>-->
+<script>
+	
+ function myFunction(){
+	var user = prompt("please enter your name.");
+
+	if (user != null)
+	{
+	  document.getElementById("greet").innerHTML = "Hello " + user +" ,  How are you?";
+	}
+}
+
+
+
+
+</script>
+</body>
+</html>

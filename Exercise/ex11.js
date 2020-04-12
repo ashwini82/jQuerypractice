@@ -1,12 +1,8 @@
 
-int a ,
-int b ,
-int ml ,
 
-for ( a = 1; a <= 12; a++) {
-	 for(b=1 ; b <=10 ; ++b) {
-	 	ml = a* b ;
-	 console.log(ml);
-	
+function myFunction(){
+	var array = [4,6,2,9,43,3,56,99,32];
+	var maxNum = Math.max.apply(null,array);
+	  return maxNum;
 }
-console.log();
+ console.log(myFunction());

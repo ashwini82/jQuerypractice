@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<p id="para">NEXT 20 LEAP YEARS </p>
+    
+    <button onclick="getLeap()">Get leap years</button>
+
+<script>
+
+	var year = prompt("Enter number to find next 20 leap years,please!");
+	var counter = 20;
+   
+
+	 function getLeap(years, num)
+      {
+      	years = parseInt(years);
+      	var origNum = num;
+      	years++;
+      	var leapyears = '';
+      	while(num > 0) 
+      	 {
+      	 	if(years % 4 == 0 && (years % 100 != 0 ||(years % 100 ===0 && years % 400 === 0)))
+      	 	{
+      	 		if(num === 1){
+      	 			leapyears += years + "." ;
+      	     }
+      	 		else{
+      	 			leapyears += years + ",";
+                    }
+      
+      	 		    years++ ;
+      	 		    num--;
+      	 	   }
+      	 	    else{
+      	 		     years++ ;
+      	 	  }
+      	 }
+        return "The next " + origNum   + "leap years are " + leapyears ;
+      }
+      alert(getLeap(year,counter));
+
+
+//document.getElementById("para").innerHTML = year;
+  
+ getLeap(year , counter , result);
+
+
+
+
+
+</script>
+
+
+
+
+
+
+    <s
+</body>
+</html>

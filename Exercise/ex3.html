@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Greet</title>
+ <style>
+ 	 #greet{
+ 	 	  color:red;
+ 	 	  margin-top:10% ;
+ 	 	  font-size :30px;
+ 	 }
+ </style>
+</head>
+<body style="background-color: powderblue">
+	<p id="greet">GREETING WITH NAME</p>
+    
+    <button onclick="myGreeting()">Enter Here</button>
+
+<script>
+
+	function myGreeting(){
+	var person = prompt("Enter your name , please!");
+    var  text ;
+    if(person == "Alice")
+      {
+        	text = "Hello " + person + "! How are you?";
+      } else if (person == "Bob"){
+      	    text = "Hello " + person + "! How are you?";
+      } else {
+       text = "cancelled the prompt.";
+      }
+     document.getElementById("greet").innerHTML = text ;
+   }
+</script>
+</body>
+</html>

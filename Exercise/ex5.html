@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MUtiple</title>
+
+	<style>
+		.body{background-color: grey;}
+
+		#result{
+			    font-size: 30px;
+			    padding-left: 10%;
+			    padding-top: 10%;
+			    text-decoration: underline;
+
+			   
+		}
+		.on{background-color: green;
+			padding: 15px 32px;
+		}
+
+		
+	</style>
+</head>
+<body class="body">
+	 <p id="result">SUM OF MULTIPLES OF 3 & 5   </p> 
+
+	 <button class="on" onclick="myProduct()">ENTER NUMBER</button>
+
+<script>
+	  function myProduct(){
+	  	 var n = parseInt(prompt("Enter your number,please!"));
+	  	 var sum = 0;
+        
+	  	 for(let i = 1 ; i <= n ; i++)
+	  	{
+         if(i % 3 ===0 || i % 5 ===0){
+              totalSum =   sum+=i ;
+         }
+
+	  	}
+
+	  document.getElementById("result").innerHTML = totalSum ;
+}
+
+</script>
+</body>
+</html>

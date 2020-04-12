@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sum of numbers</title>
+	<style>
+		#product {
+			 padding: 40px ;
+			 font-size: 30px;
+			 text-decoration: underline overline;
+		}
+        .in{background-color: powderblue;}
+
+    </style>
+</head>
+
+
+<body class="in">
+	<p id="product">SUM OF NUMBERS</p>
+    <button onclick="mySum()">ENTER NUMBER</button>
+
+
+<script>
+      function mySum(n){
+      	var n =  parseInt(prompt("Enter your number,please!"));
+     
+        
+            result = n * (n + 1) /2 ;
+       
+        
+    
+
+    document.getElementById("product").innerHTML= result;
+
+}
+
+
+</script>
+</body>
+</html>
+
+

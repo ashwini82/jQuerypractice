@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1>RollOver Application</h1>
+	<div>
+		<p>This is new event in jQuery.<br>Iam trying my best to understand concept.
+        Be focus</p>
+    </div>
+    <div>
+		<p>Be careful for syntax</p>
+	
+    </div>
+
+
+
+ <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+<script>
+	  $( "div.overout" )
+	
+        .mouseover(function(){
+     
+        	$("p" ,this).first().text('over');
+        });
+        .mouseout(function(){
+           $("p" ,this).first().text('out');
+        });
+        
+
+
+	
+
+</script>
+</body>
+</html>
